@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99DF9C"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#373942"
+        app:layout_constraintBottom_toTopOf="@+id/highScoreLabel"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/highScoreLabel"
+        app:layout_constraintTop_toTopOf="@+id/fragment_container_view"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#5C6BC0"
+        app:layout_constraintBottom_toBottomOf="@+id/bord"
+        app:layout_constraintEnd_toStartOf="@+id/bord"
+        app:layout_constraintTop_toTopOf="@+id/bord" />
+
+    <TextView
+        android:id="@+id/highScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="casual"
+        android:text=" High Score: "
+        android:textColor="#2B2C31"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bord"
+        app:layout_constraintStart_toStartOf="@+id/bord"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#28292E"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/highScoreLabel"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#27282E"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreLabel"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/scoreLabel" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#5C6BC0"
+        app:layout_constraintBottom_toTopOf="@+id/bord"
+        app:layout_constraintEnd_toEndOf="@+id/bord"
+        app:layout_constraintStart_toStartOf="@+id/bord" />
+
+    <View
+        android:id="@+id/divider16"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#25262E"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreLabel"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/highScoreLabel" />
+
+    <View
+        android:id="@+id/divider15"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#222327"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreLabel"
+        app:layout_constraintEnd_toStartOf="@+id/highScoreLabel"
+        app:layout_constraintTop_toTopOf="@+id/highScoreLabel" />
+
+    <GridView
+        android:id="@+id/bord"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:numColumns="4"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_container_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47000003" />
+
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text=" Score: "
+        android:textColor="#252529"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bord"
+        app:layout_constraintStart_toStartOf="@+id/bord"
+        app:layout_constraintTop_toBottomOf="@+id/highScoreLabel"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/highScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textColor="#EF5350"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/highScoreLabel"
+        app:layout_constraintTop_toTopOf="@+id/highScoreLabel" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#5C6BC0"
+        app:layout_constraintBottom_toBottomOf="@+id/bord"
+        app:layout_constraintEnd_toEndOf="@+id/bord"
+        app:layout_constraintStart_toStartOf="@+id/bord" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textColor="#EF5350"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/scoreLabel"
+        app:layout_constraintTop_toTopOf="@+id/scoreLabel" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#5C6BC0"
+        app:layout_constraintBottom_toBottomOf="@+id/bord"
+        app:layout_constraintEnd_toEndOf="@+id/bord"
+        app:layout_constraintTop_toTopOf="@+id/bord" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="103dp"
+        android:layout_height="46dp"
+        android:background="#E0FF58"
+        android:fontFamily="casual"
+        android:onClick="Restart"
+        android:text="Restart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bord"
+        app:layout_constraintTop_toTopOf="@+id/highScoreLabel" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:fontFamily="casual"
+        android:text="SWIPE HERE"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_container_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bord" />
+
+    <androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
